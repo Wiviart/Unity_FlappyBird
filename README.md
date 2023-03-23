@@ -1,3 +1,3 @@
 # FlappyBird
-Flappy Bird project
+Flappy Bird project game
 Making game with unity
