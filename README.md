@@ -1,3 +1,3 @@
 # FlappyBird
-Assets folder for Flappy Bird project game
+Flappy Bird project
 Making game with unity

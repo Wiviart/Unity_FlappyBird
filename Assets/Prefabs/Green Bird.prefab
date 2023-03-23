@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8797071835214417751}
   - component: {fileID: 8797071835214417748}
   - component: {fileID: 8797071835214417749}
+  - component: {fileID: 516852148}
   m_Layer: 0
   m_Name: Green Bird
   m_TagString: Player
@@ -130,7 +131,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8797071835214417751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,6 +144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177a636b713967342ae9e5eb6a92fa80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  POINT_TAG: Point
+  PIPE_TAG: Enemy
+  isAlive: 0
+  doFlap: 0
   boundForce: 5
   audioSource: {fileID: 8797071835214417749}
   fly: {fileID: 8300000, guid: 605938adbaffc2c4e9057a6d8d163b46, type: 3}
@@ -260,3 +265,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &516852148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8797071835214417754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d1c6c0ec0345d49b1500f06f35d05e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

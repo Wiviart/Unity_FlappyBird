@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class BirdController : MonoBehaviour
 {
+    public string POINT_TAG = "Point";
+    public string PIPE_TAG = "Enemy";
     private Rigidbody2D myBody;
-    private bool isAlive, isDead;
+    public bool isAlive;
     public bool doFlap;
     [SerializeField] private float boundForce;
     [SerializeField] AudioSource audioSource;
@@ -53,5 +55,21 @@ public class BirdController : MonoBehaviour
     {
         doFlap = true;
     }
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag(POINT_TAG))
+        {
+            FindObjectOfType<Score>().ScoreCount();
 
+            audioSource.PlayOneShot(ping);
+
+        }
+        if (collider.CompareTag(PIPE_TAG))
+        {
+            isAlive = false;
+
+            audioSource.PlayOneShot(dead);
+
+        }
+    }
 }

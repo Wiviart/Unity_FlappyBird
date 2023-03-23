@@ -860,6 +860,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Tap
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 825
+        width: 374
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fbb12359808c4458523e3dc2ddb53b
+      internalID: -951021991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -903,6 +924,7 @@ TextureImporter:
       PipeG: 831166404
       Play: -1575764996
       Replay: -975378409
+      Tap: -951021991
       xanh1: 1027839719
       xanh2: 937568507
       xanh3: -1825921728
